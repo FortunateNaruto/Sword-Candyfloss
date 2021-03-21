@@ -56,8 +56,6 @@ Things in **(parentheses)** after the Pokemon name is their speed
 - Autosave:        Off (can be left on but might cause lag)
 - Skip Movies:        On
 
-![Natures](natures.jpg)
-
 **Pick :info[Scorbunny]{color=orange}**
 
 :::::::trainer[Hop 1]
@@ -71,7 +69,9 @@ Things in **(parentheses)** after the Pokemon name is their speed
 # Fog Route (1/2)
 
 - 3 forced encounters, just run
-- Wild ???:        Mash A
+::::::trainer[Wildl ???]
+-  Mash A
+:::::::
 # Postwick 2/3
 - Go inside and talk to mum
 - Head for route 1
@@ -81,6 +81,55 @@ Catch **Wooloo (15%)** if you see one, otherwise just go for **Skwovet** or **Ro
 - You catch something here to also **skip Leon’s catching tutorial** on **route 2.**
 # Wedgehurst
 - Grab Rare Candy to the right of Sonia’s lab 
+
 ![Rare candy](image6.png)
+
 - Say **“Of course not” (second option)** to **Hop** in the **Pokémon Center**
 - Keep your **caught Pokémon** in the party (**unless** if you caught **Nickit** or **Rookidee**)
+
+# Route 2
+:::::::trainer[Youngster Jake]
+  :::::pokemon[Skwovet]
+   :::if{source="Scorbunny" level=7 condition="atk=17"}
+   - Tackle
+   :::
+     :::if{source="Scorbunny" level=7 condition="atk=16-"}
+   - Ember
+   :::
+   :::if{source="Scorbunny" level=8 condition="atk=18"}
+   - Ember
+   :::
+   :::if{source="Scorbunny" level=8 condition="atk=17"}
+   - Tackle
+   ::: 
+  :::::
+:::::::
+:::::::trainer[Youngster Benjamin]
+  :::::pokemon[Blipbug]
+  - Ember + (Quick Attack)
+  :::::
+  :::::pokemon[Nickit]
+  - Quick Attack x2-3
+:::::::
+
+**FREE HEAL**
+:::::::trainer[Hop 2]
+  :::::pokemon[Wooloo]
+    :::if{source="Scorbunny" condition="atk=17-"}
+    - Ember (x3)
+    :::
+    - Tackle (x3)
+  :::::
+  :::::pokemon[Grookey]
+    - Ember (x2)
+  :::::
+  :::::pokemon[Rookidee]
+    - Ember + (Quick attack if no Growl)
+  :::::
+:::::::
+
+# Wild Area (1/3)
+
+**Get watts from this den if there’s a raid available and skip the following 3 dens**
+![image33](image33.png)
+![image13](image13.png)
